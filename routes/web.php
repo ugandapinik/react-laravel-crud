@@ -21,5 +21,7 @@ Route::middleware(['guest', 'web'])->group(function () {
     Route::get("/registration", [\App\Http\Controllers\AuthController::class, 'index'])->name("Registration");
 
 
+    Route::post("/registration", [\App\Http\Controllers\AuthController::class, 'signup']);
+
 
 });
